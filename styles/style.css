@@ -36,35 +36,32 @@ nav {
 .in-nav {
     margin: auto;
     display: flex;
-    max-width: 1024px;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.nav-button-sm {
-    cursor: pointer;
-}
-#navButtons {
-    position: fixed;
     flex-direction: column;
-    align-items: flex-end;
+    max-width: 1024px;
+    padding: 1rem;
+    gap: 1rem;
+}
 
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
     gap: 0.5rem;
     top: 0;
     right: 0;
-    display: none;
     background-color: black;
     color: white;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
-.nav-buttons-md > a {
+.nav-buttons > a {
+    cursor: pointer;
     padding: 0 0.5rem;
     text-decoration: none;
     color: white;
     background-color: grey;
     padding: 0.5rem 1rem;
 }
-.nav-buttons-md > a:hover {
+.nav-buttons > a:hover {
     background-color: lightgray;
     color: gray;
 }
@@ -103,11 +100,12 @@ footer {
     nav {
         font-size: 1rem;
     }
-    .nav-button-sm {
-        display: none;
+    .in-nav {
+        flex-direction: row;
+        justify-content: space-between;
     }
-    .nav-buttons-md {
-        display: inline;
+    .nav-buttons {
+        flex-direction: row;
     }
     footer {
         font-size: 1rem;
