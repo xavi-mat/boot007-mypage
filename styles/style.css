@@ -12,3 +12,26 @@
 
 } */
 
+/* Navigation  */
+nav {
+    background-color: black;
+    color: white;
+}
+.in-nav {
+    margin: auto;
+    display: flex;
+    max-width: 1024px;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.nav-buttons > a {
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 0.5rem 1rem;
+}
+.nav-buttons > a:hover {
+    background-color: lightgray;
+    color: gray;
+}
