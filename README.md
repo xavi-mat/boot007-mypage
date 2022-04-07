@@ -24,6 +24,7 @@ https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/b
 - [ ] `nav` pattern
     - [ ] `.html`
     - [ ] `.css`
+    - [ ] `.js`
 - [ ] `index.html`
 - [ ] `bio.html`
 - [ ] `portfolio.html`

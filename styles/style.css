@@ -1,3 +1,7 @@
+/* ------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------ */
+
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
@@ -11,11 +15,23 @@
 /* root {
 
 } */
-
+main {
+    margin: auto;
+    max-width: 1024px;
+    padding: 2rem;
+    background-color: lightblue;
+}
+main::before {
+    /* TODO: delete placeholders */
+    content: "Xsmall";
+}
 /* Navigation  */
 nav {
+    position: sticky;
+    top: 0;
     background-color: black;
     color: white;
+    font-size: 1.5rem;
 }
 .in-nav {
     margin: auto;
@@ -24,14 +40,92 @@ nav {
     justify-content: space-between;
     padding: 1rem;
 }
-.nav-buttons > a {
+
+.nav-button-sm {
+    cursor: pointer;
+}
+#navButtons {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 0.5rem;
+    top: 0;
+    right: 0;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+.nav-buttons-md > a {
     padding: 0 0.5rem;
     text-decoration: none;
     color: white;
     background-color: grey;
     padding: 0.5rem 1rem;
 }
-.nav-buttons > a:hover {
+.nav-buttons-md > a:hover {
     background-color: lightgray;
     color: gray;
+}
+
+
+p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+.in-foot {
+    margin: auto;
+    display: flex;
+    max-width: 1024px;
+    justify-content: center;
+    padding: 1rem;
+
+}
+/* ------------------------------------------------------------------------ */
+
+/* Break points */
+/* 576px NOT necessary */
+/* 768px */
+/* 992px */
+/* 1200px */
+
+@media screen and (min-width:768px) {
+    main::before {
+    /* TODO: delete placeholders */
+        content: 'Medium'
+    }
+    nav {
+        font-size: 1rem;
+    }
+    .nav-button-sm {
+        display: none;
+    }
+    .nav-buttons-md {
+        display: inline;
+    }
+    footer {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (min-width:992px) {
+    main::before {
+    /* TODO: delete placeholders */
+        content: 'Large'
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main::before {
+    /* TODO: delete placeholders */
+        content: 'Xlarge'
+    }
 }
