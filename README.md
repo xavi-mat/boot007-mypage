@@ -4,7 +4,10 @@ Personal page project:
 
 https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/blob/main/src/ejercicio/ejercicio-web-personal.md
 
-## Pages:
+
+## Folder and files structure
+
+### Pages:
 
 - `index.html`
 - `/pages`
@@ -12,6 +15,14 @@ https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/b
 - - `contact.html`
 - - `portfolio.html`
 
-## Assets
+### Assets
 - `/assets`
 - - `/images`
+
+## TODO
+
+- [ ] `nav` pattern
+    - [ ] `.html`
+    - [ ] `.css`
+- [ ] ...
+- [ ] All done!
