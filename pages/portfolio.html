@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/styles/style.css">
+  <style>
+    * {
+      border: 1px solid lightblue;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,46 +34,53 @@
     </section>
 
     <section id="content" class="cards-container">
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
+      <div class="card" data-img="programs">
+        <p><a href="#programs">Programming Projects</a></p>
       </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
+      <div class="card" data-img="vn">
+        <p><a href="#vn">Visual Novels</a></p>
       </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
+      <div class="card" data-img="youtube">
+        <p><a href="#youtube">Youtube Channel</a></p>
       </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
-      </div>
-      <div class="card">
-        <p>SOME CARD CONTENT</p>
+      <div class="card" data-img="books">
+        <p><a href="#books">Books & Articles</a></p>
       </div>
     </section>
 
-    <section id="side">
-      <p>SIDE</p>
+    <section id="programs">
+      <h2>Programming Projects</h2>
+      <div class="cards-container"></div>
+    </section>
+
+    <section id="vn">
+      <h2>Visual Novels</h2>
+      <p>I've done a few short Visual Novels and Interactive Fictions. You can find all of them <a href="https://pilgrimcreations.itch.io/" target="_blank" rel="noopener noreferrer">in my itch.io page</a>.</p>
+      <div class="cards-container">
+        <a href="https://pilgrimcreations.itch.io/capitan-jack">
+          <div class="card" data-img="">
+            <p>Capitán Jack</p>
+          </div>
+        </a><a href="https://pilgrimcreations.itch.io/rhaier-dungeon-prototype">
+          <div class="card" data-img="">
+            <p>Rhaier Dungeon Prototype</p>
+          </div>
+        </a><a href="https://pilgrimcreations.itch.io/jesus-life">
+          <div class="card" data-img="">
+            <p>Jesus Life</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="youtube">
+      <h2>Youtube Channels</h2>
+      <div class="cards-container"></div>
+    </section>
+
+    <section id="books">
+      <h2>Books & Articles</h2>
+      <div class="cards-container"></div>
     </section>
 
   </main>
