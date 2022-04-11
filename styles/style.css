@@ -20,10 +20,10 @@ html {
 
 } */
 main {
-    margin: auto;
+    /* margi n: auto; */
     max-width: 1024px;
     padding: 0 2rem 2rem    2rem;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 /* main::before {
     content: "Xsmall";
@@ -38,7 +38,7 @@ nav {
     z-index: 1;
 }
 .in-nav {
-    margin: auto;
+    /* margi n: auto; */
     display: flex;
     flex-direction: column;
     max-width: 1024px;
@@ -86,7 +86,7 @@ footer {
     font-size: 1.5rem;
 }
 .in-foot {
-    margin: auto;
+    /* margi n: auto; */
     display: flex;
     max-width: 1024px;
     justify-content: center;
@@ -99,13 +99,14 @@ footer {
 }
 
 #content {
-    background-color: brown;
+    /* background-color: brown; */
     /* padding: 0.5rem; */
     margin-bottom: 0.5rem;
 }
 
 #side {
-    background-color: lightyellow;
+    /* background-color: lightyellow; */
+    display: none;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -124,9 +125,10 @@ footer {
     border: 1px solid black;
     position: relative;
     width: 200px;
-    height: 200px;
+    height: 100px;
     background-size: cover;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .card img {
@@ -148,21 +150,28 @@ footer {
     font-size: 150%;
 }
 
+.explain::first-letter {
+    font-size: 150%;
+    color: maroon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#main-picture {
+    max-width: 100%;
+}
+
 /* ------------------------------------------------------------------------ */
 
-/* Break points */
-/* 576px NOT necessary */
+/* Possible break points */
+/* 576px */
 /* 768px */
 /* 992px */
 /* 1200px */
 
-@media screen and (min-width:768px) {
-    /* main::before {
-        content: 'Medium'
-    } */
+@media screen and (min-width:576px) {
     nav {
         position: sticky;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .in-nav {
         flex-direction: row;
@@ -172,21 +181,45 @@ footer {
     .nav-buttons {
         flex-direction: row;
     }
+    .card {
+        height: 200px;
+    }
+    footer {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    /* main::before {
+        content: 'Medium'
+    } */
+    nav {
+        font-size: 1rem;
+    }
+    /* .in-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+    /* .nav-buttons {
+        flex-direction: row;
+    } */
     footer {
         font-size: 1rem;
     }
 
 
+
 }
 
 @media screen and (min-width:992px) {
-    /* main::before {
+    main::before {
         content: 'Large'
-    } */
+    }
 }
 
 @media screen and (min-width:1200px) {
-    /* main::before {
+    main::before {
         content: 'Xlarge'
-    } */
+    }
 }
