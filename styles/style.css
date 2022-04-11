@@ -11,6 +11,10 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Variables */
 /* root {
 
@@ -18,13 +22,12 @@
 main {
     margin: auto;
     max-width: 1024px;
-    padding: 2rem;
+    padding: 0 2rem 2rem    2rem;
     background-color: lightblue;
 }
-main::before {
-    /* TODO: delete placeholders */
+/* main::before {
     content: "Xsmall";
-}
+} */
 /* Navigation  */
 nav {
     position: static;
@@ -68,7 +71,11 @@ nav {
     color: gray;
 }
 
-
+h1,
+h2,
+h3 {
+    margin: 2rem 0 1rem 0;
+}
 p {
     margin-bottom: 1rem;
 }
@@ -115,13 +122,15 @@ footer {
 
 .card {
     border: 1px solid black;
-    /* padding: 0.5rem; */
     position: relative;
     width: 200px;
     height: 200px;
-    background-image: url(/assets/images/chibi-square.jpg);
     background-size: cover;
     cursor: pointer;
+}
+
+.card img {
+    width: 100%;
 }
 
 .card p {
@@ -130,7 +139,10 @@ footer {
     color: black;
     width: 100%;
     text-align: center;
-    text-shadow: 0 0 4px #FFFFFF;
+    text-shadow: 1px 1px 2px #FFFFFF,
+                -1px -1px 2px #FFFFFF,
+                1px -1px 2px #FFFFFF,
+                -1px 1px 2px #FFFFFF;
     font-weight: bold;
     margin-bottom: 0;
     font-size: 150%;
@@ -145,10 +157,9 @@ footer {
 /* 1200px */
 
 @media screen and (min-width:768px) {
-    main::before {
-    /* TODO: delete placeholders */
+    /* main::before {
         content: 'Medium'
-    }
+    } */
     nav {
         position: sticky;
         font-size: 1rem;
@@ -169,15 +180,13 @@ footer {
 }
 
 @media screen and (min-width:992px) {
-    main::before {
-    /* TODO: delete placeholders */
+    /* main::before {
         content: 'Large'
-    }
+    } */
 }
 
 @media screen and (min-width:1200px) {
-    main::before {
-    /* TODO: delete placeholders */
+    /* main::before {
         content: 'Xlarge'
-    }
+    } */
 }
