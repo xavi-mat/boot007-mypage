@@ -26,9 +26,9 @@ https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/b
     - [x] `.css`
     - [x] `.js` No JS for now.
 - [ ] Content
-    - [ ] `index.html`
+    - [x] `index.html`
     - [ ] `bio.html`
-    - [ ] `portfolio.html`
+    - [x] `portfolio.html`
     - [ ] `contact.html`
 - [ ] Styling
     - [ ] `index.html`
