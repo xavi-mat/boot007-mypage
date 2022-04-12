@@ -48,12 +48,12 @@ https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/b
     - [x] `bio.html`
     - [x] `portfolio.html`
     - [x] `contact.html`
-- [ ] Styling
+- [x] Styling
     - [x] `xsmall`
     - [x] `small`
     - [x] `medium`
-    - [ ] `large`
-    - [ ] `Xlarge`
+    - [x] `large`
+    - [x] `Xlarge`
 - [ ] Review
     - [ ] `index.html`
     - [ ] `bio.html`
