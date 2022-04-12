@@ -31,9 +31,9 @@ main {
 #main {
     max-width: 1024px;
 }
-/* main::before {
+main::before {
     content: "Xsmall";
-} */
+}
 /* Navigation  */
 nav {
     position: static;
@@ -74,7 +74,7 @@ nav {
 }
 .nav-buttons > a:hover {
     background-color: lightgray;
-    color: gray;
+    color: #444444;
 }
 
 h1,
@@ -120,7 +120,7 @@ footer {
 /* Form  */
 
 form * {
-    font-size: 125%;
+    font-size: 110%;
     margin-bottom: 0.5em;
 }
 
@@ -129,6 +129,19 @@ textarea {
     max-width: 600px;
 }
 
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.active {
+    background-color: #CCCCCC !important;
+    color: #222222 !important;
+}
+.active:hover {
+    background-color: #AAAAAA !important;
+    color: #111111 !important;
+}
 /* ------------------------------------------------------------------------ */
 /* Cards */
 
@@ -151,6 +164,9 @@ textarea {
 
 .card img {
     width: 100%;
+}
+.card:hover {
+    filter: brightness(80%);
 }
 
 .card p {
@@ -187,6 +203,9 @@ textarea {
 /* 1200px */
 
 @media screen and (min-width:576px) {
+    main::before {
+        content: 'Small'
+    }
     nav {
         position: sticky;
         font-size: 1.25rem;
@@ -208,9 +227,9 @@ textarea {
 }
 
 @media screen and (min-width:768px) {
-    /* main::before {
+    main::before {
         content: 'Medium'
-    } */
+    }
     nav {
         font-size: 1rem;
     }
