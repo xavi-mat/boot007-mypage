@@ -233,6 +233,7 @@ iframe {
     border-radius: 10%;
     bottom: 20%;
     background-color: #44444488;
+    cursor: pointer;
 }
 
 /* ------------------------------------------------------------------------ */

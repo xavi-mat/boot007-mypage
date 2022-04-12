@@ -8,19 +8,19 @@ https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/b
 
 ### Xsmall
 
-![xsmall](assets/images/screenshot-xsmall.jpg)
+![xsmall](assets/images/screenshots/screenshot-xsmall.jpg)
 
 ### Small
 
-![small](assets/images/screenshot-small.jpg)
+![small](assets/images/screenshots/screenshot-small.jpg)
 
 ### Medium
 
-![medium](assets/images/screenshot-medium.jpg)
+![medium](assets/images/screenshots/screenshot-medium.jpg)
 
 ### Large
 
-![large](assets/images/screenshot-large.jpg)
+![large](assets/images/screenshots/screenshot-large.jpg)
 
 
 ## Folder and files structure
