@@ -1,10 +1,13 @@
 /* ------------------------------------------------------------------------ */
-
+/* My page styles
+(c) 2022 by xavimat */
 /* ------------------------------------------------------------------------ */
 
+/* ------------------------------------------------------------------------ */
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* ------------------------------------------------------------------------ */
 /* Root values */
 * {
     margin: 0;
@@ -15,25 +18,30 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Variables */
-/* root {
-
-} */
 main {
-    /* margi n: auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* max-width: 1024px; */
     padding: 0 2rem 2rem 2rem;
-    /* background-color: lightblue; */
 }
-#main {
+
+#center-portfolio {
     max-width: 1024px;
 }
-main::before {
-    content: "Xsmall";
+
+/* ------------------------------------------------------------------------ */
+/* General container tags */
+h1,
+h2,
+h3 {
+    margin: 2rem 0 1rem 0;
 }
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------------------------ */
 /* Navigation  */
 nav {
     position: static;
@@ -43,8 +51,8 @@ nav {
     font-size: 1.5rem;
     z-index: 1;
 }
+
 .in-nav {
-    /* margi n: auto; */
     display: flex;
     flex-direction: column;
     max-width: 1024px;
@@ -55,14 +63,13 @@ nav {
 .nav-buttons {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
     gap: 0.5rem;
     top: 0;
     right: 0;
     background-color: black;
     color: white;
-    /* padding: 1rem; */
 }
+
 .nav-buttons > a {
     cursor: pointer;
     padding: 0 0.5rem;
@@ -72,25 +79,31 @@ nav {
     padding: 0.5rem 1rem;
     border-radius: 10px;
 }
+
 .nav-buttons > a:hover {
     background-color: lightgray;
     color: #444444;
 }
 
-h1,
-h2,
-h3 {
-    margin: 2rem 0 1rem 0;
-}
-p {
-    margin-bottom: 1rem;
+/* We need !important to override tag properties on .active button */
+.active {
+    background-color: #CCCCCC !important;
+    color: #222222 !important;
 }
 
+.active:hover {
+    background-color: #AAAAAA !important;
+    color: #111111 !important;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Footer */
 footer {
     background-color: black;
     color: white;
     font-size: 1.5rem;
 }
+
 .in-foot {
     /* margi n: auto; */
     display: flex;
@@ -98,8 +111,10 @@ footer {
     justify-content: center;
     padding: 1rem;
 }
+
+/* ------------------------------------------------------------------------ */
+/* Identifiers for geneneral blocks */
 #hero {
-    /* background-color: blueviolet; */
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -112,20 +127,20 @@ footer {
 
 #side {
     /* background-color: lightyellow; */
-    display: none;
+    /* display: none; */
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
+/* ------------------------------------------------------------------------ */
 /* Form  */
-
 form * {
     font-size: 110%;
     margin-bottom: 0.5em;
 }
 
 textarea {
-    width: 100%;
+    width: 95%;
     max-width: 600px;
 }
 
@@ -134,14 +149,6 @@ textarea {
     justify-content: flex-end;
 }
 
-.active {
-    background-color: #CCCCCC !important;
-    color: #222222 !important;
-}
-.active:hover {
-    background-color: #AAAAAA !important;
-    color: #111111 !important;
-}
 /* ------------------------------------------------------------------------ */
 /* Cards */
 
@@ -165,6 +172,7 @@ textarea {
 .card img {
     width: 100%;
 }
+
 .card:hover {
     filter: brightness(80%);
 }
@@ -176,20 +184,24 @@ textarea {
     width: 100%;
     text-align: center;
     text-shadow: 1px 1px 2px #FFFFFF,
-                -1px -1px 2px #FFFFFF,
-                1px -1px 2px #FFFFFF,
-                -1px 1px 2px #FFFFFF;
+        -1px -1px 2px #FFFFFF,
+        1px -1px 2px #FFFFFF,
+        -1px 1px 2px #FFFFFF;
     font-weight: bold;
     margin-bottom: 0;
     font-size: 150%;
 }
 
+/* ------------------------------------------------------------------------ */
+/* TODO */
 .explain::first-letter {
     font-size: 150%;
     color: maroon;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* ------------------------------------------------------------------------ */
+/* TODO */
 #main-picture {
     max-width: 100%;
 }
@@ -201,38 +213,48 @@ textarea {
 /* 768px */
 /* 992px */
 /* 1200px */
+/* TODO */
 
 @media screen and (min-width:576px) {
-    main::before {
-        content: 'Small'
-    }
     nav {
         position: sticky;
         font-size: 1.25rem;
     }
+
     .in-nav {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: .3rem;
     }
+
     .nav-buttons {
         flex-direction: row;
     }
+
+    .nav-buttons>a {
+        padding: 0.2rem 0.4rem;
+    }
+
     .card {
         height: 200px;
     }
+
     footer {
         font-size: 1.25rem;
     }
 }
 
 @media screen and (min-width:768px) {
-    main::before {
-        content: 'Medium'
-    }
+
     nav {
         font-size: 1rem;
     }
+
+    .in-nav {
+        padding: 1rem;
+    }
+
     /* .in-nav {
         flex-direction: row;
         justify-content: space-between;
@@ -241,22 +263,16 @@ textarea {
     /* .nav-buttons {
         flex-direction: row;
     } */
+    .nav-buttons>a {
+        padding: 0.5rem 1rem;
+    }
+
     footer {
         font-size: 1rem;
     }
 
-
-
-}
-
-@media screen and (min-width:992px) {
-    main::before {
-        content: 'Large'
-    }
-}
-
-@media screen and (min-width:1200px) {
-    main::before {
-        content: 'Xlarge'
+    .central {
+        display: flex;
+        align-items: center;
     }
 }
