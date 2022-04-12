@@ -4,6 +4,9 @@ Personal page project:
 
 https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/blob/main/src/ejercicio/ejercicio-web-personal.md
 
+## Images
+
+![foto](assets/images/code.jpg)
 
 ## Folder and files structure
 
