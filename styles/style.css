@@ -161,6 +161,7 @@ textarea {
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
+    transition: all 0.5s ease;
 }
 
 .card img {
@@ -168,7 +169,8 @@ textarea {
 }
 
 .card:hover {
-    filter: brightness(80%);
+    filter: brightness(50%);
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
 .card p {
@@ -214,6 +216,10 @@ textarea {
 
 .icon:hover {
     background-color: #eeeeee;
+}
+
+iframe {
+    width: 100%;
 }
 
 /* ------------------------------------------------------------------------ */
