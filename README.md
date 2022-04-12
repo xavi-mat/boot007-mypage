@@ -61,5 +61,5 @@ https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/b
     - [x] `contact.html`
     - [x] `styles.css`
 - [x] Add a "go up" button
-- [ ] Send
-- [ ] All done!
+- [x] Send
+- [x] All done!
