@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------------ */
-/* My page styles
-(c) 2022 by xavimat */
+/*              My page styles                                              */
+/*              (c) 2022 by xavimat                                         */
 /* ------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------ */
@@ -23,10 +23,6 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 0 2rem 2rem 2rem;
-}
-
-#center-portfolio {
-    max-width: 1024px;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -70,7 +66,7 @@ nav {
     color: white;
 }
 
-.nav-buttons > a {
+.nav-buttons>a {
     cursor: pointer;
     padding: 0 0.5rem;
     text-decoration: none;
@@ -80,7 +76,7 @@ nav {
     border-radius: 10px;
 }
 
-.nav-buttons > a:hover {
+.nav-buttons>a:hover {
     background-color: lightgray;
     color: #444444;
 }
@@ -105,35 +101,34 @@ footer {
 }
 
 .in-foot {
-    /* margi n: auto; */
     display: flex;
-    /* max-width: 1024px; */
     justify-content: center;
     padding: 1rem;
 }
 
 /* ------------------------------------------------------------------------ */
-/* Identifiers for geneneral blocks */
+/* Identifiers for general blocks */
 #hero {
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 #content {
-    /* background-color: brown; */
-    /* padding: 0.5rem; */
     margin-bottom: 0.5rem;
 }
 
+#center-portfolio {
+    max-width: 1024px;
+}
+
 #side {
-    /* background-color: lightyellow; */
-    /* display: none; */
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 /* ------------------------------------------------------------------------ */
 /* Form  */
+/* On mobile, larger font */
 form * {
     font-size: 110%;
     margin-bottom: 0.5em;
@@ -193,7 +188,7 @@ textarea {
 }
 
 /* ------------------------------------------------------------------------ */
-/* TODO */
+/* Some decorations on explanation paragraphs. */
 .explain::first-letter {
     font-size: 150%;
     color: maroon;
@@ -201,21 +196,36 @@ textarea {
 }
 
 /* ------------------------------------------------------------------------ */
-/* TODO */
+/* Adjust my careto picture. */
 #main-picture {
     max-width: 100%;
 }
 
+
 /* ------------------------------------------------------------------------ */
+/* Social icons */
+.icon {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icon:hover {
+    background-color: #eeeeee;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Media queries */
 
 /* Possible break points */
 /* 576px */
 /* 768px */
 /* 992px */
 /* 1200px */
-/* TODO */
 
+/* Small screens */
 @media screen and (min-width:576px) {
+
+    /* Variations on nav */
     nav {
         position: sticky;
         font-size: 1.25rem;
@@ -236,17 +246,21 @@ textarea {
         padding: 0.2rem 0.4rem;
     }
 
+    /* Higher cards */
     .card {
         height: 200px;
     }
 
+    /* Smaller font size on footer */
     footer {
         font-size: 1.25rem;
     }
 }
 
+/* Medium and larger screens */
 @media screen and (min-width:768px) {
 
+    /* Variations on nav */
     nav {
         font-size: 1rem;
     }
@@ -255,22 +269,19 @@ textarea {
         padding: 1rem;
     }
 
-    /* .in-nav {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    } */
-    /* .nav-buttons {
-        flex-direction: row;
-    } */
     .nav-buttons>a {
         padding: 0.5rem 1rem;
     }
 
+    /* Smaller font size on footer and footer */
     footer {
         font-size: 1rem;
     }
+    form * {
+        font-size: 100%;
+    }
 
+    /* Central content blocks as row */
     .central {
         display: flex;
         align-items: center;
