@@ -54,10 +54,12 @@ https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/b
     - [x] `medium`
     - [x] `large`
     - [x] `Xlarge`
-- [ ] Review
-    - [ ] `index.html`
-    - [ ] `bio.html`
-    - [ ] `portfolio.html`
-    - [ ] `contact.html`
-    - [ ] `styles.css`
+- [x] Review
+    - [x] `index.html`
+    - [x] `bio.html`
+    - [x] `portfolio.html`
+    - [x] `contact.html`
+    - [x] `styles.css`
+- [x] Add a "go up" button
+- [ ] Send
 - [ ] All done!

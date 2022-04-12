@@ -7,11 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xavimat's Portfolio</title>
   <link rel="stylesheet" href="/styles/style.css">
-  <!-- <style>
-    * {
-      border: 1px solid lightblue;
-    }
-  </style> -->
 </head>
 
 <body>
@@ -60,13 +55,17 @@
           </a>
         </div>
       </section>
+      <!-- End of section content -->
 
       <section id="programs">
         <h2>Programming Projects</h2>
         <p class="explain">I've contributed to some free software repositories and also done some repos myself.</p>
+
         <h3>My public repositories</h3>
-        <p class="explain">My public repositories can be found at <a href="https://github.com/xavi-mat?tab=repositories"
-            target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+        <p class="explain">
+          My public repositories can be found at <a href="https://github.com/xavi-mat?tab=repositories" target="_blank"
+            rel="noopener noreferrer">GitHub</a>.
+        </p>
         <div class="cards-container">
           <div class="card" data-card="personal">
             <a href="https://github.com/xavi-mat/boot007-mypage" target="_blank" rel="noopener noreferrer">
@@ -117,6 +116,7 @@
           </div>
         </div>
       </section>
+      <!-- End of section programs -->
 
       <section id="vn">
         <h2>Visual Novels</h2>
@@ -125,14 +125,12 @@
         </p>
 
         <div class="cards-container">
-
           <a href="https://pilgrimcreations.itch.io/capitan-jack" target="_blank">
             <div class="card" data-card="jack">
               <img src="/assets/images/vn/captain-jack.png" alt="Capitán Jack">
               <p>Capitán Jack</p>
             </div>
           </a>
-
           <a href="https://pilgrimcreations.itch.io/rhaier-dungeon-prototype" target="_blank">
             <div class="card" data-card="dungeon">
               <img src="/assets/images/vn/dungeon.png" alt="Rhaier Dungeon Prototype">
@@ -146,6 +144,7 @@
           </a>
         </div>
       </section>
+      <!-- End of section vn -->
 
       <section id="youtube">
         <h2>Youtube Channel</h2>
@@ -153,6 +152,7 @@
           Some tutorials about Ren'Py on my <a href="https://www.youtube.com/channel/UC1uZXxXw4mFlmxt-rj13NaQ"
             target="_blank" rel="noopener noreferrer">YouTube channel</a>.
         </p>
+
         <div class="cards-container">
           <div class="card" data-card="video1">
             <iframe width="200" height="200" src="https://www.youtube.com/embed/EXAsVt2iz_k"
@@ -177,13 +177,17 @@
           </div>
         </div>
       </section>
+      <!-- end of section YouTube -->
 
       <section id="books">
         <h2>Books & Articles</h2>
-        <p class="explain">I've contributed to some books and written some academic articles.
+        <p class="explain">
+          I've contributed to some books and written some academic articles.
           My complete bibliography can be found in my <a href="https://www.zotero.org/javimat/cv" target="_blank"
             rel="noopener noreferrer">Zotero Curriculum Vitae</a>.
-          I've also written a fantasy novel.</p>
+          I've also written a fantasy novel.
+        </p>
+
         <div class="cards-container">
           <div class="card" data-card="yarea">
             <a href="https://www.amazon.es/Yarea-Xavier-Matoses/dp/1791558364" target="_blank"
@@ -207,30 +211,55 @@
           </div>
         </div>
       </section>
+      <!-- End of section books -->
 
     </div>
-
   </main>
+
   <footer>
     <div class="in-foot">
       &copy; 2022 by xavimat
     </div>
   </footer>
+
+  <div onclick="window.scrollTo(0,0)">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-circle go-up-btn" width="44"
+      height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <circle cx="12" cy="12" r="9" />
+      <line x1="12" y1="8" x2="8" y2="12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+      <line x1="16" y1="12" x2="12" y2="8" />
+    </svg>
+  </div>
+
   <script>
+    // Keep statistics on mouseenter
     const statistics = {};
+
+    // Log which card has been entered by the mouse
     const logCursor = (node) => {
+
       const item = node.dataset['card'];
+
+      // Save
       if (!statistics[item]) {
         statistics[item] = 1;
       } else {
         statistics[item]++;
       }
+
+      // Show
       console.clear();
       console.table(statistics);
     }
-    document.querySelectorAll('.card').forEach(n=>{
-      n.addEventListener('mouseenter', ()=>{logCursor(n)})
+
+    // Add listener to all cards
+    document.querySelectorAll('.card').forEach(n => {
+      n.addEventListener('mouseenter', () => { logCursor(n) })
     });
+
   </script>
 
 </body>

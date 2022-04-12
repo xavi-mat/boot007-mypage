@@ -22,12 +22,10 @@
     </div>
   </nav>
 
-
   <main>
 
     <section id="hero">
       <h1>Xavimat's Contact Info</h1>
-
 
       <div class="cards-container">
         <p><a href="https://www.facebook.com/xavimatoses/" target="_blank" rel="noopener noreferrer" title="Facebook">
@@ -60,10 +58,11 @@
             </svg></a></p>
       </div>
     </section>
+    <!-- End of section hero -->
 
     <div class="central">
-      <section id="content">
 
+      <section id="content">
         <p class="explain">If you want to contact me, you can send a message using the form below.</p>
 
         <form method="get">
@@ -97,27 +96,45 @@
         </form>
       </section>
 
+      <!-- Empty sectin to show user input -->
       <section id="side">
       </section>
+
     </div>
+    <!-- End of div central -->
+
   </main>
 
+  <!-- Iframe outside main, so it expands all width -->
   <div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12366.795422402874!2d-0.3169119588264309!3d39.20429099993359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61b62fc4146bfb%3A0x4f13a5da85f49ee3!2s46410%20Sueca%2C%20Val%C3%A8ncia!5e0!3m2!1sca!2ses!4v1649783075515!5m2!1sca!2ses"
       height="600" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+
   <footer>
     <div class="in-foot">
       &copy; 2022 by xavimat
     </div>
   </footer>
 
-  <script>
-    // This code is too small to use an entire external js file:
+  <div onclick="window.scrollTo(0,0)">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-circle go-up-btn" width="44"
+      height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <circle cx="12" cy="12" r="9" />
+      <line x1="12" y1="8" x2="8" y2="12" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+      <line x1="16" y1="12" x2="12" y2="8" />
+    </svg>
+  </div>
 
-    // Get params from url, if any
+  <script>
+    // Show user input data, if any
+
+    // Get params from url
     const params = new URLSearchParams(location.search);
 
     // Put params as default values
@@ -125,12 +142,15 @@
     [...params.entries()].forEach(([key, value]) => {
       inn += `<li>${key}: ${value}</li>`;
     });
+
+    // If there are params, put them on 'side'
     if (inn.length > 0) {
       inn = '<p><strong>Your message has been sent:</strong></p><ul>' + inn + '</ul>';
       document.getElementById('side').innerHTML = inn;
     }
 
   </script>
+
 </body>
 
 </html>
