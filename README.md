@@ -4,9 +4,24 @@ Personal page project:
 
 https://github.com/TheBridge-FullStackDeveloper/fswd-ft-abr22-ramp-up-valencia/blob/main/src/ejercicio/ejercicio-web-personal.md
 
-## Images
+## Screenshots
 
-![foto](assets/images/code.jpg)
+### Xsmall
+
+![xsmall](assets/images/screenshot-xsmall.jpg)
+
+### Small
+
+![small](assets/images/screenshot-small.jpg)
+
+### Medium
+
+![medium](assets/images/screenshot-medium.jpg)
+
+### Large
+
+![large](assets/images/screenshot-large.jpg)
+
 
 ## Folder and files structure
 
