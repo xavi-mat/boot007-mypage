@@ -21,9 +21,15 @@ html {
 } */
 main {
     /* margi n: auto; */
-    max-width: 1024px;
-    padding: 0 2rem 2rem    2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 1024px; */
+    padding: 0 2rem 2rem 2rem;
     /* background-color: lightblue; */
+}
+#main {
+    max-width: 1024px;
 }
 /* main::before {
     content: "Xsmall";
@@ -88,7 +94,7 @@ footer {
 .in-foot {
     /* margi n: auto; */
     display: flex;
-    max-width: 1024px;
+    /* max-width: 1024px; */
     justify-content: center;
     padding: 1rem;
 }
@@ -109,6 +115,18 @@ footer {
     display: none;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+/* Form  */
+
+form * {
+    font-size: 125%;
+    margin-bottom: 0.5em;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
 }
 
 /* ------------------------------------------------------------------------ */

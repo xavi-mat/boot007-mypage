@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xavimat's Contact</title>
+  <title>Xavimat's Contact Info</title>
   <link rel="stylesheet" href="/styles/style.css">
 </head>
 
@@ -24,11 +24,43 @@
   <main>
 
     <section id="hero">
-      <h1>Xavimat's Contact</h1>
+      <h1>Xavimat's Contact Info</h1>
     </section>
 
     <section id="content">
-      <p>CONTENT</p>
+
+      <div class="cards-container">
+        <p><a href="https://www.facebook.com/xavimatoses/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+        <p><a href="https://twitter.com/xavimat_" target="_blank" rel="noopener noreferrer">Twitter</a></p>
+        <p><a href="https://www.linkedin.com/in/xavier-matoses/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      </div>
+
+      <p class="explain">If you want to contact me, you can send a message using the form below.</p>
+
+      <form method="get">
+        <label for="name">Name:*</label>
+        <input id="name" type="text" name="name" placeholder="Your name (required)" required>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Your email (optional)">
+        <br>
+        <select name="reason" id="reason">
+          <option disabled selected>-- Select the reason of your message --</option>
+          <option value="hire">I want to hire you</option>
+          <option value="class">I need a programming class</option>
+          <option value="hi">Just saying Hi</option>
+          <option value="marry">I wanna marry you</option>
+        </select>
+        <br>
+        <label for="message">Your message:*</label>
+        <br>
+        <textarea name="message" id="message" rows="8" placeholder="Write your message (required)" required></textarea>
+        <br>
+        <input type="submit" value="Send message">
+        <br>
+        <small>*Required fields.</small>
+      </form>
+
     </section>
 
     <section id="side">
@@ -42,6 +74,18 @@
     </div>
   </footer>
 
+  <script>
+    // This code is too small to use an entire external js file:
+
+    // Get params from url, if any
+    const params = new URLSearchParams(location.search);
+
+    // Put params as default values
+    [...params.entries()].forEach(([key, value]) => {
+      document.getElementById(key).value = value;
+    });
+
+  </script>
 </body>
 
 </html>
